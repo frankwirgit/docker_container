@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="CarbMarkers" skipped="0" tests="3" time="209.528" timestamp="2019-01-31T01:58:34">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_CarbMarker_throw_error_when_carb_not_deleted_Test-3-positive1" time="205.023" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_CarbMarker_throw_error_when_carb_not_updated_Test-2-positive1" time="200.961" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_CarbMarker_throw_error_when_normal_carb_not_parsed_correctly_Test-1-positive1" time="196.519" />
+</testsuite>

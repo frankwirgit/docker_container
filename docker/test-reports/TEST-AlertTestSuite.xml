@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="AlertTestSuite" skipped="0" tests="1" time="102.505" timestamp="2019-01-31T02:20:12">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.junit.TestCaseProxy" name="HypoFeedbackNoticeUnitTest" time="102.502" />
+</testsuite>

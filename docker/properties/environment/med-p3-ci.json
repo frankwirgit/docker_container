@@ -1,0 +1,233 @@
+{
+  "data_mgt": {
+    "compose_file": "data-mgt.yml",
+    "project_name": "data-mgt",
+    "container_name": "data-mgt",
+    "network": "sugar-iq",
+    "volume_name": "data-mgt-vol",
+    "key_db_location": "/root/ci-db-keystore/ci-db2.kdb",
+    "key_stash_location": "/root/ci-db-keystore/ci-db2.sth",
+    "success_message": "DB2 deployed successfully"
+  },
+  "analytics_streams": {
+    "compose_file": "analytics-streams.yml",
+    "project_name": "analytics-streams",
+    "network": "sugar-iq",
+    "truststore_location": "/root/ci-truststore/sugariq-truststore.jks",
+    "db": {
+      "hostname": "data-mgt",
+      "port": 50443,
+      "password": "safe4whc",
+      "user": "db2dat01"
+    },
+    "zookeeper_nodes": [
+      {
+        "container_name": "zookeeper1",
+        "zookeeper_id": 1
+      }
+    ],
+    "zookeeper_servers": "server.1=zookeeper1.sugar-iq:2888:3888",
+    "streams_zkconnect": "zookeeper1.sugar-iq:2181",
+    "redis_nodes": [
+      {
+        "container_name": "redis1"
+      }
+    ],
+    "redis_config": "\\\" {\\\\\\\"replicas\\\\\\\" : 1, \\\\\\\"shards\\\\\\\" : 1, \\\\\\\"replicaGroups\\\\\\\" : [{ \\\\\\\"servers\\\\\\\" : [\\\\\\\"redis1.sugar-iq:6379\\\\\\\"], \\\\\\\"description\\\\\\\" : \\\\\\\"rack1\\\\\\\" }]} \\\"",
+    "redis_servers": "redis1.sugar-iq:6379:safe4whc",
+    "kafka_servers": "kafka.sugar-iq:9093",
+    "kafka_partitions": 1,
+    "streams_mgmt_leader_node": {
+      "container_name": "analytics-streams-mgmt1"
+    },
+    "streams_mgmt_nodes": [],
+    "streams_app_nodes": [
+      {
+        "container_name": "analytics-streams-app1"
+      },
+      {
+        "container_name": "analytics-streams-app2"
+      }
+    ],
+    "success_message": "Analytics Streams deployed successfully"
+  },
+  "mbe": {
+    "compose_file": "mbe.yml",
+    "project_name": "mbe",
+    "container_name": "mbe",
+    "network": "sugar-iq",
+    "port": 9080,
+    "truststore_location": "/root/ci-truststore/sugariq-truststore.jks",
+    "ssl_port": 9443,
+    "db": {
+      "host": "data-mgt",
+      "port": 50443,
+      "user": "db2dat01",
+      "password": "safe4whc"
+    },
+    "carelink_host": "device-simulator",
+    "carelink_port": 8080,
+    "oauth_url": "http://device-simulator:8082/apiplatform",
+    "kafka_servers": [
+      "kafka:9093"
+    ],
+    "zookeeper_servers": [
+      "kafka:2181"
+    ],
+    "success_message": "script ended successfully"
+  },
+  "device_simulator": {
+    "compose_file": "device-simulator.yml",
+    "project_name": "device-simulator",
+    "container_name": "device-simulator",
+    "network": "sugar-iq",
+    "truststore_location": "/root/ci-truststore/sugariq-truststore.jks",
+    "db": {
+      "host": "data-mgt",
+      "port": 50443,
+      "user": "db2dat01",
+      "password": "safe4whc"
+    },
+    "mbe_host": "mbe",
+    "mbe_port": 9443,
+    "kafka_servers": [
+        "kafka:9093"
+    ],
+    "success_message": "Done - deploy completed"
+  },
+  "kafka": {
+    "compose_file": "kafka.yml",
+    "project_name": "kafka",
+    "container_name": "kafka",
+    "network": "sugar-iq",
+    "port": 9092,
+    "ssl_port": 9093,
+    "success_message": "Kafka deployed successfully"
+  },
+  "data_mgt_tests": {
+    "compose_file": "data-mgt-tests.yml",
+    "project_name": "data-mgt-tests",
+    "container_name": "data-mgt-tests",
+    "network": "sugar-iq",
+    "db_host": "data-mgt",
+    "success_message": "Data Management tests complete"
+  },
+  "mbe_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "mbe-tests",
+    "container_name": "mbe-tests",
+    "network": "sugar-iq",
+    "db": {
+      "name": "MDTDB",
+      "host": "data-mgt",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "mbe",
+    "mbe_port": 9080,
+    "guardian_sim_host": "device-simulator",
+    "ana_jee_host": "mbe",
+    "carelink_host": "device-simulator",
+    "kafka_servers": [
+      {
+        "host": "kafka",
+        "port": 9092
+      }
+    ],
+    "zookeeper_servers": "kafka:2181",
+    "success_message": "Mobile Backend tests complete"
+  },
+  "analytics_streams_unit_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-unit-tests",
+    "container_name": "analytics-streams-unit-tests",
+    "network": "sugar-iq",
+    "streams_zkconnect": "zookeeper1.sugar-iq:2181",
+    "streams_url": "https://analytics-streams-mgmt1.sugar-iq:8443/streams",
+    "redis_servers": "redis1.sugar-iq:6379:safe4whc",
+    "test_type": "unit",
+    "test_properties": "streams.CI_Docker.properties",
+    "app_config": "med-p3-docker_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "analytics_streams_component_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-component-tests",
+    "container_name": "analytics-streams-component-tests",
+    "network": "sugar-iq",
+    "streams_zkconnect": "zookeeper1.sugar-iq:2181",
+    "streams_url": "https://analytics-streams-mgmt1.sugar-iq:8443/streams",
+    "redis_servers": "redis1.sugar-iq:6379:safe4whc",
+    "test_type": "component",
+    "test_properties": "streams.CI_Docker.properties",
+    "app_config": "med-p3-docker_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "analytics_streams_smoke_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-smoke-tests",
+    "container_name": "analytics-streams-smoke-tests",
+    "network": "sugar-iq",
+    "streams_zkconnect": "zookeeper1.sugar-iq:2181",
+    "streams_url": "https://analytics-streams-mgmt1.sugar-iq:8443/streams",
+    "redis_servers": "redis1.sugar-iq:6379:safe4whc",
+    "test_type": "smoke",
+    "test_properties": "streams.CI_Docker.properties",
+    "app_config": "med-p3-docker_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "integration_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "integration-tests",
+    "container_name": "integration-tests",
+    "network": "sugar-iq",
+    "db": {
+      "name": "MDTDB",
+      "host": "data-mgt",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "mbe",
+    "mbe_port": 9080,
+    "guardian_sim_host": "device-simulator",
+    "ana_jee_host": "mbe",
+    "carelink_host": "device-simulator",
+    "kafka_servers": [
+      {
+        "host": "kafka",
+        "port": 9092
+      }
+    ],
+    "success_message": "Integration tests complete"
+  },
+  "health_diagnostic_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "health-diagnostic-tests",
+    "container_name": "health-diagnostic-tests",
+    "network": "sugar-iq",
+    "db": {
+      "name": "MDTDB",
+      "host": "data-mgt",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "mbe",
+    "mbe_port": 9080,
+    "guardian_sim_host": "device-simulator",
+    "ana_jee_host": "mbe",
+    "carelink_host": "device-simulator",
+    "kafka_servers": [
+      {
+        "host": "kafka",
+        "port": 9092
+      }
+    ],
+    "success_message": "Health Diagnostic tests complete"
+  }
+}

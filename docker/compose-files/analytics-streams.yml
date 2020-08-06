@@ -1,0 +1,76 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  zookeeper1:
+    image: "med-p3-dev-cwb.softlayer.com:5000/common/zookeeper:3.4.11"
+    container_name: "zookeeper1"
+    hostname: "zookeeper1.sugar-iq"
+    networks:
+      - "sugar-iq"
+    ports:
+          - "8443:8443"
+    environment:
+      - "ZOO_MY_ID=1"
+      - "ZOO_SERVERS='server.1=zookeeper1.sugar-iq:2888:3888'"
+
+  redis1:
+    image: "med-p3-dev-cwb.softlayer.com:5000/common/redis:4.0.10"
+    container_name: "redis1"
+    hostname: "redis1.sugar-iq"
+    networks:
+      - "sugar-iq"
+
+  analytics-streams-mgmt1:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/analytics-streams:latest"
+    container_name: "analytics-streams-mgmt1"
+    hostname: "analytics-streams-mgmt1.sugar-iq"
+    networks:
+      - "sugar-iq"
+    volumes:
+      - type: "bind"
+        source: "${HOME}/sugariq-truststore.jks"
+        target: "/etc/ssl/sugariq-truststore.jks"
+    stop_grace_period: "2m"
+    environment:
+      - "STREAMS_HOST_TYPE=mgmt-leader"
+      - "STREAMS_DOMAIN=whc"
+      - "STREAMS_INSTANCE=medp3"
+      - "STREAMS_APPNODE_TAG=medp3"
+      - "STREAMS_ZKCONNECT=zookeeper1.sugar-iq:2181"
+      - "REDIS_CONFIG=\" {\\\"replicas\\\" : 1, \\\"shards\\\" : 1, \\\"replicaGroups\\\" : [{ \\\"servers\\\" : [\\\"redis1.sugar-iq:6379\\\"], \\\"description\\\" : \\\"rack1\\\" }]} \""
+      - "STREAMS_DOMAIN_HA_COUNT=2"
+      - "STREAMS_INSTANCE_HA_COUNT=2"
+      - "STREAMS_APPNODE_COUNT=0"
+      - "STREAMS_MGMTNODE_COUNT=1"
+
+      - "MDT_DB_HOSTNAME=data-mgt"
+      - "MDT_DB_PORT=50443"
+      - "MDT_STREAMS_DB_USERNAME=db2dat01"
+      - "MDT_STREAMS_DB_PASSWORD=safe4whc"
+
+      - "STREAMS_REDIS=redis1.sugar-iq:6379:safe4whc"
+      - "STREAMS_ADMIN_USERNAME=streamsadmin"
+      - "STREAMS_ADMIN_PASSWORD=safe4whc"
+
+      - "KAFKA_BROKERS=kafka.sugar-iq:9093"
+
+      - "TRUSTSTORE_PATH=/etc/ssl/sugariq-truststore.jks"
+      - "TRUSTSTORE_PASSWORD=safe4whc"
+
+  streams-studio1:
+    image: "med-p3-dev-cwb.softlayer.com:5000/medp3/streams-studio:latest"
+    container_name: "streams-studio1"
+    hostname: "streams-studio1.sugar-iq"
+    networks:
+      - "sugar-iq"
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+      - "~/workspaces:/home/streamsuser/workspaces"
+      - "~/eclipse/.eclipse:/home/streamsuser/.eclipse"
+    environment:
+      - "DISPLAY=docker.for.mac.localhost:0"
+  

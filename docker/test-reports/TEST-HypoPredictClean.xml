@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="HypoPredictClean" skipped="0" tests="1" time="157.569" timestamp="2019-01-31T02:11:16">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_HypoCleanArtifact1_NomarkSG_TestCase-1-positive1" time="155.791" />
+</testsuite>

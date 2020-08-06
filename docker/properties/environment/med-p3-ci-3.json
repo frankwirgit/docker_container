@@ -1,0 +1,128 @@
+{
+  "data_mgt_tests": {
+    "compose_file": "data-mgt-tests.yml",
+    "project_name": "data-mgt-tests-3",
+    "container_name": "data-mgt-tests-3",
+    "network": "sugar-iq-3",
+    "db_host": "med-p3-ci-db1.softlayer.com",
+    "success_message": "Data Management tests complete"
+  },
+  "mbe_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "mbe-tests-3",
+    "container_name": "mbe-tests-3",
+    "network": "sugar-iq-3",
+    "db": {
+      "name": "MDTDB",
+      "host": "med-p3-ci-db1.softlayer.com",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "med-p3-ci-wlp1.softlayer.com",
+    "mbe_port": 9080,
+    "guardian_sim_host": "med-p3-ci-twlp1.softlayer.com",
+    "ana_jee_host": "med-p3-ci-wlp1.softlayer.com",
+    "carelink_host": "med-p3-ci-twlp1.softlayer.com",
+    "kafka_servers": [
+      {
+        "host": "med-p3-ci-wlp1.softlayer.com",
+        "port": 9092
+      }
+    ],
+    "zookeeper_servers": "med-p3-ci-wlp1.softlayer.com:2181",
+    "success_message": "Mobile Backend tests complete"
+  },
+  "analytics_streams_unit_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-unit-tests-3",
+    "container_name": "analytics-streams-unit-tests-3",
+    "network": "sugar-iq-3",
+    "streams_zkconnect": "med-p3-ci-streams-mgmt-1.softlayer.com:2181",
+    "streams_url": "https://med-p3-ci-streams-mgmt-1.softlayer.com:8443/streams",
+    "redis_servers": "med-p3-ci-streams-redis-1.softlayer.com:6379:safe4whc",
+    "test_type": "unit",
+    "test_properties": "streams.CI.properties",
+    "app_config": "med-p3-ci_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "analytics_streams_component_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-component-tests-3",
+    "container_name": "analytics-streams-component-tests-3",
+    "network": "sugar-iq-3",
+    "streams_zkconnect": "med-p3-ci-streams-mgmt-1.softlayer.com:2181",
+    "streams_url": "https://med-p3-ci-streams-mgmt-1.softlayer.com:8443/streams",
+    "redis_servers": "med-p3-ci-streams-redis-1.softlayer.com:6379:safe4whc",
+    "test_type": "component",
+    "test_properties": "streams.CI.properties",
+    "app_config": "med-p3-ci_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "analytics_streams_smoke_tests": {
+    "compose_file": "analytics-streams-tests.yml",
+    "project_name": "analytics-streams-smoke-tests-3",
+    "container_name": "analytics-streams-smoke-tests-3",
+    "network": "sugar-iq-3",
+    "streams_zkconnect": "med-p3-ci-streams-mgmt-1.softlayer.com:2181",
+    "streams_url": "https://med-p3-ci-streams-mgmt-1.softlayer.com:8443/streams",
+    "redis_servers": "med-p3-ci-streams-redis-1.softlayer.com:6379:safe4whc",
+    "test_type": "smoke",
+    "test_properties": "streams.CI.properties",
+    "app_config": "med-p3-ci_OnePartMDTLIVE",
+    "success_message": "Analytics Streams tests complete"
+  },
+  "integration_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "integration-tests-3",
+    "container_name": "integration-tests-3",
+    "network": "sugar-iq-3",
+    "db": {
+      "name": "MDTDB",
+      "host": "med-p3-ci-db1.softlayer.com",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "med-p3-ci-wlp1.softlayer.com",
+    "mbe_port": 9080,
+    "guardian_sim_host": "med-p3-ci-twlp1.softlayer.com",
+    "ana_jee_host": "mbe",
+    "carelink_host": "med-p3-ci-twlp1.softlayer.com",
+    "kafka_servers": [
+      {
+        "host": "med-p3-ci-wlp1.softlayer.com",
+        "port": 9092
+      }
+    ],
+    "success_message": "Integration tests complete"
+  },
+  "health_diagnostic_tests": {
+    "compose_file": "integration-tests.yml",
+    "project_name": "health-diagnostic-tests-3",
+    "container_name": "health-diagnostic-tests-3",
+    "network": "sugar-iq-3",
+    "db": {
+      "name": "MDTDB",
+      "host": "med-p3-ci-db1.softlayer.com",
+      "port": 50000,
+      "user": "db2dat01",
+      "password": "safe4whc",
+      "ssl": false
+    },
+    "mbe_host": "med-p3-ci-wlp1.softlayer.com",
+    "mbe_port": 9080,
+    "guardian_sim_host": "med-p3-ci-twlp1.softlayer.com",
+    "ana_jee_host": "mbe",
+    "carelink_host": "med-p3-ci-twlp1.softlayer.com",
+    "kafka_servers": [
+      {
+        "host": "med-p3-ci-wlp1.softlayer.com",
+        "port": 9092
+      }
+    ],
+    "success_message": "Health Diagnostic tests complete"
+  }
+}

@@ -1,0 +1,28 @@
+<!--Build script for project com.ibm.mdt.ci.-->
+<project name="com.ibm.mdt.ci" default="dist" basedir=".">
+
+	<property name="dist.dir" value="dist"/>
+	<property name="component.name" value=""/>
+	<property name="component.version" value=""/>
+	
+	<target name="clean">
+		<delete dir="${dist.dir}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${dist.dir}"/>
+	</target>
+	
+	<target name="dist" depends="init">
+		<zip destfile="${dist.dir}/mdt-ci.zip" basedir="${basedir}" excludes="build.xml, .project, dist/**"/>
+	</target>
+	
+	<target name="about">
+			<propertyfile file="version.properties">
+			  <entry  key="COMPONENT" value="${component.name}"/>
+			  <entry  key="BUILD_NUMBER" value="${component.version}"/>
+			  <entry  key="DATE" type="date" value="now" pattern="dd-MMM-YYYY HH:mm:ss"/>
+			</propertyfile>
+	</target>
+	
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="StdDevFeatures" skipped="0" tests="15" time="35.881" timestamp="2019-01-31T02:07:55">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev2hr-15-should_generate_feature_with_incomplete_2_hr_window" time="31.595" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev2hr-15-should_generate_feature_with_150_min_expanded_window" time="31.596" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev2hr-15-should_generate_feature_with_incomplete_150_min_expanded_window" time="31.597" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev2hr-15-should_not_generate_feature_with_150_min_gap" time="31.597" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev2hr-15-should_generate_feature_with_2_hr_window" time="31.597" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev30min-14-should_generate_feature_with_30_min_window" time="27.161" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev30min-14-should_not_generate_feature_with_45_min_gap" time="27.161" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev30min-14-should_generate_feature_with_45_min_expanded_window" time="27.162" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev30min-14-should_generate_feature_with_incomplete_30_min_window" time="27.162" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev30min-14-should_generate_feature_with_incomplete_45_min_expanded_window" time="27.163" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev4hr-16-should_generate_feature_with_4_hr_window" time="22.85" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev4hr-16-should_generate_feature_with_incomplete_270_min_expanded_window" time="22.85" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev4hr-16-should_not_generate_feature_with_270_min_gap" time="22.851" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev4hr-16-should_generate_feature_with_incomplete_4_hr_window" time="22.851" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="stddev4hr-16-should_generate_feature_with_270_min_expanded_window" time="22.851" />
+</testsuite>

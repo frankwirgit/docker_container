@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="LiveClean" skipped="0" tests="15" time="165.095" timestamp="2019-01-31T01:45:39">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact1_markSG_20mins_delayed_with_GT_60mgdL_drop_TestCase1-1-positive1" time="161.737" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact1_markSG_20mins_delayed_with_GT_60mgdL_drop_TestCase2-2-positive1" time="158.884" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact1_markSG_20mins_delayed_with_GT_60mgdL_drop_TestCase3-3-positive1" time="157.194" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase1-4-positive1" time="155.989" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase2-5-positive1" time="154.609" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase3-6-positive1" time="153.032" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase4-7-positive1" time="151.71" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase5-8-positive1" time="150.253" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanArtifact2_markSG_nodelay_with_GT_65mgdL_or_40pct_drop_TestCase6-9-positive1" time="148.865" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOutofRange_markSG_when_GT400_or_LT40_TestCase1-13-positive1" time="147.402" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOutofRange_markSG_when_GT400_or_LT40_TestCase2-14-positive1" time="146.222" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOutofRange_markSG_when_GT400_or_LT40_TestCase3-15-positive1" time="144.643" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOverlap1_markSG_came_2hrs_early-10-positive1" time="143.215" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOverlap1_markSG_came_halfhr_early-11-positive1" time="141.791" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOverlap1_nomarkSG_came_at_sametime-12-positive1" time="140.216" />
+</testsuite>

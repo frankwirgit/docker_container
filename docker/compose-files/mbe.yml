@@ -1,0 +1,71 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  mbe:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/mbe:latest"
+    container_name: "mbe"
+    networks:
+      - "sugar-iq"
+    ports:
+          - "9080:9080"
+    volumes:
+      - type: "bind"
+        source: "${HOME}/sugariq-truststore.jks"
+        target: "/etc/ssl/sugariq-truststore.jks"
+
+      - type: "bind"
+        source: "${HOME}/sugariq-truststore.jks"
+        target: "/opt/WebSphereLibertyProfile_v8559/wlp/usr/shared/resources/security/sugariq-truststore.jks"
+    environment:
+      - "MDT_DB_HOSTNAME=data-mgt"
+      - "MDT_DB_PORT=50443"
+      - "MDT_STREAMS_DB_USERNAME=db2dat01"
+      - "MDT_STREAMS_DB_PASSWORD=safe4whc"
+      - "MDT_MBE_DB_USERNAME=db2dat01"
+      - "MDT_MBE_DB_PASSWORD=safe4whc"
+
+      - "MFP_PROTOCOL=https"
+      - "MFP_HOSTNAME=mbe"
+      - "MFP_PORT=9443"
+      - "MFP_ADMIN_USERNAME=admin"
+      - "MFP_ADMIN_PASSWORD=admin"
+
+      - "KAFKA_ZOOKEEPERS=kafka:2181"
+      - "KAFKA_BROKERS=kafka:9093"
+
+      - "SIMULATOR_HOSTNAME=device-simulator"
+      - "SIMULATOR_PORT=8080"
+
+      - "TRUSTSTORE_PATH=/etc/ssl/sugariq-truststore.jks"
+      - "TRUSTSTORE_PASSWORD=safe4whc"
+
+      - "IOS_APPLICATION_ID=com.ibm.medtronic.sugariq"
+      - "IOS_PUSH_CERT_PATH=/tmp/pushCertificates/devSim/MedtronicSugarIQSandboxAPNsCerts.p12"
+      - "IOS_PUSH_CERT_PASSWORD=ibm4you"
+      - "IOS_SIMULATOR_PUSH_CERT_PATH=/tmp/pushCertificates/devSim/MedtronicSugarIQSandboxAPNsCerts.p12"
+      - "IOS_SIMULATOR_PUSH_CERT_PASSWORD=ibm4you"
+      - "MFP_KEYSTORE_PATH=/opt/ibm/wlp/usr/servers/mfp/resources/security/key.jks"
+      - "MFP_KEYSTORE_PASSWORD=mobilefirst"
+      - "MFP_TRUSTSTORE_PATH=/opt/ibm/wlp/usr/shared/resources/security/sugariq-truststore.jks"
+      - "MFP_TRUSTSTORE_PASSWORD=safe4whc"
+      - "MFP_JDBC_LIBRARY_REF=MobileFirst/JDBC/derby"
+      - "MFP_ClUSTER_MODE=Standalone"
+      - "MFP_DB_USERNAME=db2dat01"
+      - "MFP_DB_PASSWORD=safe4whc"
+      - "MFP_JAVA_HOME=/opt/java/jdk1.8.0_161"
+      - "MFP_PUSH_AUTHORIZATION_CLIENT_ID=push-client-id"
+      - "MFP_PUSH_AUTHORIZATION_CLIENT_SECRET=pushSecret"
+      - "MFP_ADMIN_AUTHORIZATION_CLIENT_ID=admin-client-id"
+      - "MFP_ADMIN_AUTHORIZATION_CLIENT_SECRET=adminSecret"
+      - "MFP_ADMIN_ID=admin"
+      - "MFP_JMX_USER=MfpRESTUser"
+      - "MFP_JMX_USER_PASSWORD=password"
+      - "MFP_CONFIG_ADMIN_USER=configUser"
+      - "MFP_CONFIG_ADMIN_USER_PASSWORD=password"
+      - "LIVE_TOPIC_NAME=MDTLIVE"
+      - "NUTRINO_HOSTNAME=https://iw2tu1r0d6.execute-api.us-west-2.amazonaws.com:443"
+      - "MDT_API_KEY=acf23e9f-7a91-43a4-9638-376bc1fbb8bc"

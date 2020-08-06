@@ -1,0 +1,29 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+volumes:
+  data-mgt-vol:
+
+services:
+  data-mgt:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/data-mgt-mac:latest"
+    container_name: "data-mgt"
+    networks:
+      - "sugar-iq"
+    ports:
+          - "50000:50000"
+          - "50443:50443"
+    privileged: "true"
+    volumes:
+      - type: "volume"
+        source: "data-mgt-vol"
+        target: "/disk1/DB2"
+      - type: "bind"
+        source: "${HOME}/db2.kdb"
+        target: "/home/db2inst1/sqllib/security/keystore/db2.kdb"
+      - type: "bind"
+        source: "${HOME}/db2.sth"
+        target: "/home/db2inst1/sqllib/security/keystore/db2.sth"

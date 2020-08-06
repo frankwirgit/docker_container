@@ -1,0 +1,19 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  kafka:
+    image: "med-p3-dev-cwb.softlayer.com:5000/common/kafka:latest"
+    container_name: "kafka"
+    networks:
+      - "sugar-iq"
+    ports:
+          - "2181:2181"
+          - "9092:9092"
+          - "9093:9093"
+    environment:
+      - "JAVA_HOME=/opt/java/jdk1.8.0_161"
+      - "ADVERTISED_HOSTNAME=kafka"

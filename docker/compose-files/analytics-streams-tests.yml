@@ -1,0 +1,25 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  analytics-streams-smoke-tests:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/analytics-streams-tests:latest"
+    container_name: "analytics-streams-smoke-tests"
+    networks:
+      - "sugar-iq"
+    environment:
+      - "TEST_TYPE=smoke"
+      - "TEST_PROPERTIES=streams.CI_Docker.properties"
+      - "STREAMS_DOMAIN=whc"
+      - "STREAMS_ZKCONNECT=zookeeper1.sugar-iq:2181"
+      - "STREAMS_URL=https://analytics-streams-mgmt1.sugar-iq:8443/streams"
+      - "STREAMS_REDIS=redis1.sugar-iq:6379:safe4whc"
+      - "APP_CONFIG=med-p3-docker_OnePartMDTLIVE"
+      - "KEEP_ALIVE=true"
+    volumes:
+      - type: "bind"
+        source: "/Users/lcao@us.ibm.com/docker_scripts/ci/docker/test-reports"
+        target: "/home/streamsadmin/dist"

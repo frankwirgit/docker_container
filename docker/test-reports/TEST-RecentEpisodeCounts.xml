@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="RecentEpisodeCounts" skipped="0" tests="20" time="47.673" timestamp="2019-01-31T02:10:17">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo14Day-26-should_get-one-episode" time="45.429" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo14Day-26-should_get-three-episodes" time="45.429" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo14to30Day-31-should_count_days_14_to_30" time="44.036" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo1Day-23-should_get-two-episodes" time="42.019" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo1Day-23-should_get-one-episode" time="42.021" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo1hr-20-should_get-two-episodes" time="39.784" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo1hr-20-should_get-one-episode" time="39.787" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo1to3Day-28-should_count_days_1_to_3" time="38.58" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo2hr-21-should_get-two-episodes" time="36.477" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo2hr-21-should_get-one-episode" time="36.478" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo30Day-27-should_not_count_30days_old_episode" time="32.968" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo30Day-27-should_get-one-episode" time="32.967" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo3Day-24-should_get-one-episode" time="29.982" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo3Day-24-should_get-three-episodes" time="29.982" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo3to7Day-29-should_count_days_3_to_7" time="28.756" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo6hr-22-should_get-two-episodes" time="26.736" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo6hr-22-should_get-one-episode" time="26.736" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo7Day-25-should_get-one-episode" time="24.699" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo7Day-25-should_get-three-episodes" time="24.702" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="recentHypo7to14Day-30-should_count_days_7_to_14" time="23.55" />
+</testsuite>

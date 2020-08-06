@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="0" name="HypoPredictClean-smoke-test" package="" skipped="0" tests="1" time="170.714" timestamp="2019-03-08T19:33:50">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_HypoCleanArtifact1_NomarkSG_TestCase-1-positive1" time="168.683" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="1" name="LiveClean-smoke-test" package="" skipped="0" tests="1" time="183.655" timestamp="2019-03-08T19:30:34">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOverlap1_nomarkSG_came_at_sametime-12-positive1" time="181.995" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="2" name="Triggers-smoke-test" package="" skipped="0" tests="2" time="188.708" timestamp="2019-03-08T19:27:11">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_immediately_Test-20-positive1" time="187.582" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_when_SG_appeared_at_15mins_Test-21-positive1" time="186.588" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="3" name="Bolus-GI-smoke-test" package="" skipped="0" tests="3" time="96.319" timestamp="2019-03-08T19:20:12">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="GI-232-MDT_input_should_generate_insights_as_expected" time="79.573" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="GI-232-should_generate_insight_on_65_pct_of_true_features_and_not_less" time="79.584" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="GI-232-should_generate_insight_ignoring_data_older_than_30_days" time="79.585" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="4" name="Nutrino-GI-smoke-test" package="" skipped="0" tests="1" time="651.103" timestamp="2019-03-08T19:09:07">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="GI-534-positive1" time="638.69" />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" id="5" name="MI-smoke-test" package="" skipped="0" tests="4" time="294.434" timestamp="2019-03-08T19:22:04">
+      <properties />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_improvement_from_last_month" time="266.299" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-MDT_input_should_generate_insights_as_expected" time="266.3" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_less_than_25_pct_hypos" time="266.3" />
+
+      <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_number_of_packages_more_than_480" time="266.301" />
+
+  </testsuite>
+</testsuites>

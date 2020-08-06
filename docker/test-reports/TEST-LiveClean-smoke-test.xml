@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" name="LiveClean-smoke-test" skipped="0" tests="1" time="183.655" timestamp="2019-03-08T19:30:34">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_LiveCleanOverlap1_nomarkSG_came_at_sametime-12-positive1" time="181.995" />
+</testsuite>

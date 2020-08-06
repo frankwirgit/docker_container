@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="Bolus-features" skipped="0" tests="19" time="459.374" timestamp="2019-01-31T01:31:52">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-150-should_get_feature_per_overlapping_bolus" time="452.397" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-150-should_get_correct_hyper_pct" time="452.398" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-151-should_get_feature_per_overlapping_bolus" time="447.492" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-151-should_get_correct_severe_hyper_pct" time="447.492" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-152-should_get_correct_hypo_pct" time="443.504" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-152-should_get_feature_per_overlapping_bolus" time="443.505" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-154-should_get_feature_per_overlapping_bolus" time="438.768" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-154-should_get_correct_80_pct_in_range_flag" time="438.769" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-19-should_get_correct_hour_with_bolus_at_end_of_hour" time="432.697" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-19-should_get_feature_per_hour_of_day" time="432.698" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-20-should_get_feature_per_day_of_week" time="430.426" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-22-should_get_feature_per_overlapping_bolus" time="425.503" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-22-should_get_correct_hypo_episode_flag" time="425.504" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-24-should_get_feature_per_overlapping_bolus" time="421.186" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-24-should_get_correct_hyper_episode_flag" time="421.186" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-25-should_get_correct_severe_hyper_episode_flag" time="417.195" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-25-should_get_feature_per_overlapping_bolus" time="417.196" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-26-should_get_feature_per_overlapping_bolus" time="412.678" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="F-26-should_get_correct_pct_in_control" time="412.679" />
+</testsuite>

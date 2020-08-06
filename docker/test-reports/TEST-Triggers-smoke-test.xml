@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" name="Triggers-smoke-test" skipped="0" tests="2" time="188.708" timestamp="2019-03-08T19:27:11">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_immediately_Test-20-positive1" time="187.582" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_when_SG_appeared_at_15mins_Test-21-positive1" time="186.588" />
+</testsuite>

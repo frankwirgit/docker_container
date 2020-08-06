@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="Triggers" skipped="0" tests="22" time="189.98" timestamp="2019-01-31T01:52:34">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_all_bolus_triggers_Test-16-positive1" time="186.508" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_all_carb_triggers_Test-17-positive1" time="182.49" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_bolus_trigger_immediately_Test-19-positive1" time="181.361" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_carb_trigger_immediately_Test-18-positive1" time="180.07" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_food_trigger_with_bin_value_1_when_food_loged_at_12pm_Test-1-positive1" time="179.031" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_food_trigger_with_bin_value_1_when_food_loged_at_9pm_Test-3-positive1" time="178.055" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_food_trigger_with_bin_value_2_when_food_loged_at_12pm_Test-2-positive1" time="176.785" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_food_trigger_with_bin_value_2_when_food_loged_at_9pm_Test-4-positive1" time="175.848" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_food_triggers_at_mid_hour_Test-22-positive1" time="174.849" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_immediately_Test-20-positive1" time="173.643" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_time_trigger_when_SG_appeared_at_15mins_Test-21-positive1" time="172.589" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_at_timeblock_4_on_Saturday_Test-9-positive1" time="171.305" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_at_timeblock_4_on_Sunday_Test-6-positive1" time="169.941" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_at_timeblock_4_on_Tuesday_Test-7-positive1" time="168.635" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_at_timeblock_4_on_day_after_holiday_Test-5-positive1" time="167.204" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_at_timeblock_6_on_Thursday_Test-8-positive1" time="166.107" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_roc_is_1_Test-10-positive1" time="164.871" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_roc_is_2_Test-11-positive1" time="163.546" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_timeblock_is_3_Test-12-positive1" time="162.174" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_timeblock_is_5_Test-13-positive1" time="160.896" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_timeblock_is_7_Test-14-positive1" time="159.542" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_send_trigger_when_timeblock_is_8_Test-15-positive1" time="157.871" />
+</testsuite>

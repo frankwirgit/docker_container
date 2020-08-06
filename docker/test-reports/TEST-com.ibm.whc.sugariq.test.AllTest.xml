@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="1" hostname="b789a8f56d7e" name="com.ibm.whc.sugariq.test.AllTest" skipped="0" tests="6" time="690.649" timestamp="2019-02-21T16:08:13">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="/tmp/vv-test/health-diagnostic-test/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="javax.net.ssl.trustStorePassword" value="safe4whc" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/opt/java/jdk1.8.0_161/jre/lib/resources.jar:/opt/java/jdk1.8.0_161/jre/lib/rt.jar:/opt/java/jdk1.8.0_161/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_161/jre/lib/jsse.jar:/opt/java/jdk1.8.0_161/jre/lib/jce.jar:/opt/java/jdk1.8.0_161/jre/lib/charsets.jar:/opt/java/jdk1.8.0_161/jre/lib/jfr.jar:/opt/java/jdk1.8.0_161/jre/classes" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/opt/apache-ant-1.9.9" />
+    <property name="java.runtime.version" value="1.8.0_161-b12" />
+    <property name="javax.net.ssl.keyStore" value="/etc/ssl/sugariq.jks" />
+    <property name="user.name" value="root" />
+    <property name="javax.net.ssl.trustStoreType" value="jks" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/opt/java/jdk1.8.0_161/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.file.oea-nonshipped-rest-test-jpa" value="/tmp/vv-test/health-diagnostic-test/scripts/build.xml" />
+    <property name="ant.project.name" value="oea-nonshipped-rest-test-jpa" />
+    <property name="java.version" value="1.8.0_161" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/opt/java/jdk1.8.0_161/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="ANSI_X3.4-1968" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/opt/java/jdk1.8.0_161/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/tmp/vv-test/health-diagnostic-test/scripts/build.xml" />
+    <property name="os.version" value="4.9.93-linuxkit-aufs" />
+    <property name="test.class.name" value="com.ibm.whc.sugariq.test.AllTest" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.161-b12" />
+    <property name="report.dir" value="/tmp/vv-test/health-diagnostic-test/scripts/report" />
+    <property name="ant.library.dir" value="/opt/apache-ant-1.9.9/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="user.home" value="/root" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="javax.net.ssl.keyStoreType" value="jks" />
+    <property name="bin.dir" value="/tmp/vv-test/health-diagnostic-test/scripts/bin" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  -f build.xml -Dtest.class.name=com.ibm.whc.sugariq.test.AllTest -Djavax.net.ssl.trustStore=/opt/ibm/wlp/usr/shared/resources/security/sugariq-truststore.jks -Djavax.net.ssl.trustStorePassword=safe4whc -Djavax.net.ssl.keyStore=/etc/ssl/sugariq.jks -Djavax.net.ssl.keyStoreType=jks -Djavax.net.ssl.keyStorePassword=mobilefirst -Djavax.net.ssl.trustStoreType=jks -Djdk.tls.client.protocols=TLSv1.2" />
+    <property name="java.class.path" value="/opt/apache-ant-1.9.9/lib/ant-launcher.jar:/opt/apache-ant-1.9.9/lib/ant-apache-oro.jar:/opt/apache-ant-1.9.9/lib/ant-jai.jar:/opt/apache-ant-1.9.9/lib/ant-testutil.jar:/opt/apache-ant-1.9.9/lib/ant-jdepend.jar:/opt/apache-ant-1.9.9/lib/ant-jsch.jar:/opt/apache-ant-1.9.9/lib/ant-apache-bsf.jar:/opt/apache-ant-1.9.9/lib/ant-commons-net.jar:/opt/apache-ant-1.9.9/lib/ant-javamail.jar:/opt/apache-ant-1.9.9/lib/ant-junit4.jar:/opt/apache-ant-1.9.9/lib/ant-apache-xalan2.jar:/opt/apache-ant-1.9.9/lib/ant-junit.jar:/opt/apache-ant-1.9.9/lib/ant-launcher.jar:/opt/apache-ant-1.9.9/lib/ant-antlr.jar:/opt/apache-ant-1.9.9/lib/ant-apache-log4j.jar:/opt/apache-ant-1.9.9/lib/ant-jmf.jar:/opt/apache-ant-1.9.9/lib/ant.jar:/opt/apache-ant-1.9.9/lib/ant-apache-resolver.jar:/opt/apache-ant-1.9.9/lib/ant-netrexx.jar:/opt/apache-ant-1.9.9/lib/ant-swing.jar:/opt/apache-ant-1.9.9/lib/ant-commons-logging.jar:/opt/apache-ant-1.9.9/lib/ant-apache-bcel.jar:/opt/apache-ant-1.9.9/lib/ant-apache-regexp.jar:/opt/java/jdk1.8.0_161/lib/tools.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.9 compiled on February 2 2017" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="ant.file.type.oea-nonshipped-rest-test-jpa" value="file" />
+    <property name="java.ext.dirs" value="/opt/java/jdk1.8.0_161/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/tmp/vv-test/health-diagnostic-test/scripts" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/tmp/vv-test/health-diagnostic-test/scripts" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/opt/apache-ant-1.9.9/lib/ant.jar" />
+    <property name="file.encoding" value="ANSI_X3.4-1968" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="main" />
+    <property name="jdk.tls.client.protocols" value="TLSv1.2" />
+    <property name="javax.net.ssl.trustStore" value="/opt/ibm/wlp/usr/shared/resources/security/sugariq-truststore.jks" />
+    <property name="javax.net.ssl.keyStorePassword" value="mobilefirst" />
+  </properties>
+  <testcase classname="com.ibm.whc.sugariq.test.PrimeTests" name="should_have_at_least_100_my_data_records_after_prime_completes" time="228.002" />
+  <testcase classname="com.ibm.whc.sugariq.test.NewUserTests" name="should_return_person_id_from_carelink_sim_after_new_user_creation" time="3.02" />
+  <testcase classname="com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest" name="when_pattern_and_trigger_then_insight_delivered[glycemic.379 - E10_Glycemic_379_E14_motivational_1_insights]" time="23.9">
+    <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.ibm.whc.sugariq.http.CarelinkServiceClient.doPost(CarelinkServiceClient.java:459)
+	at com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient.invokeSimulatorApi(GuardianSimulatorClient.java:374)
+	at com.ibm.whc.sugariq.insights.tests.InsightTestRunner.sendLiveData(InsightTestRunner.java:191)
+	at com.ibm.whc.sugariq.insights.tests.InsightTestRunner.sendInputPattern(InsightTestRunner.java:140)
+	at com.ibm.whc.sugariq.insights.tests.InsightTestRunner.run(InsightTestRunner.java:84)
+	at com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest.when_pattern_and_trigger_then_insight_delivered(InsightPushNotificationTest.java:193)
+</error>
+  </testcase>
+  <testcase classname="com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest" name="when_pattern_and_trigger_then_insight_delivered[motivational.1 - E10_Glycemic_379_E14_motivational_1_insights]" time="369.285">
+    <failure message="The insight motivational.1 did not appear in the database table within 300 seconds" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The insight motivational.1 did not appear in the database table within 300 seconds
+	at com.ibm.whc.sugariq.insights.tests.InsightTestRunner.waitForInsightGenerationToStop(InsightTestRunner.java:157)
+	at com.ibm.whc.sugariq.insights.tests.InsightTestRunner.run(InsightTestRunner.java:86)
+	at com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest.when_pattern_and_trigger_then_insight_delivered(InsightPushNotificationTest.java:193)
+</failure>
+  </testcase>
+  <testcase classname="com.ibm.whc.sugariq.hypo.HypoScoreUserPrimeLiveTest" name="given_a_input_csv_data_when_user_accepts_eula_then_the_hyposcore_push_notification_is_sent_to_mobile" time="49.61" />
+  <testcase classname="com.ibm.whc.sugariq.hypo.HypoAlertGenerationTest" name="when_sg_value_less_than_70_sent_through_live_data_then_hypoalert_push_notification_sent_to_mobile" time="14.583" />
+  <system-out><![CDATA[Constructing PropertyLoader: given path to prop file: data/environments.properties
+Constructing PropertyLoader: absolute path to prop file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties
+Constructing PropertyLoader: printing properties: 
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest Loading test properity files...
+Constructing PropertyLoader: given path to prop file: data/insightTests.properties
+Constructing PropertyLoader: absolute path to prop file: /tmp/vv-test/health-diagnostic-test/scripts/data/insightTests.properties
+Constructing PropertyLoader: printing properties: 
+-- listing properties --
+testIds=*all
+testFiles=data/E10_Glycemic_379_E14_motivationa...
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest Running tests with test file(s) data/E10_Glycemic_379_E14_motivational_1_insights.json
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest Test Ids *all
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest 2 tests will be run.
+===> com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest The following insights will be tested:
+glycemic.379
+motivational.1
+
+Constructing PropertyLoader: given path to prop file: data/environments.properties
+Constructing PropertyLoader: absolute path to prop file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties
+Constructing PropertyLoader: printing properties: 
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.PrimeTests 3 Clearing database for person_id 125841898 in before class.
+com.ibm.whc.sugariq.test.PrimeTests 3 Cleared 125841898
+com.ibm.whc.sugariq.test.PrimeTests 3 Entering prime test!
+com.ibm.whc.sugariq.test.PrimeTests 3 Config user!
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY constructor param: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN constructor
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY configureUser
+com.ibm.whc.sugariq.test.PrimeTests 3 Accepting EULA for new person id: 125841898 and token: abcdefgh123456125841898
+com.ibm.whc.sugariq.test.clients.MbeClient  > ENTRY acceptEulaForPersonId param: 125841898
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Suspending hypo prediction for personId: 125841898
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey) params: [[J@1339e7aa, 120000, DONOTSCORESUSPEND]
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+sugariq.mobile.backend.framework.KafkaUtil WARNING Requiring Streams - not a local test.  Will suspend Hypo prediction and wait for Ack...
+topic:HYPOSUSPEND partition:0 key:DONOTSCORESUSPEND value:{"id":[125841898]}
+sent
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY ensureHypoAckIsReceived param: [J@1339e7aa
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY checkKafkaTopicMessageExists params: [HYPOACK, [J@1339e7aa]
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: HYPOACK
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+key=CONFIRM message number=0
+Consumed message with conditionString ,key=CONFIRM value=DONOTSCORESUSPEND {"id":[125841898]}
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN checkKafkaTopicMessageExists returns: true
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN ensureHypoAckIsReceived
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey)
+com.ibm.whc.sugariq.test.clients.MbeClient 3 MFP base URL: http://mbe:9080/mfp/api/adapters
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Kafka URL: kafka:9092
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Is Test Running Local (without Streams): false
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Successfully accepted EULA on MBE.
+com.ibm.whc.sugariq.test.clients.MbeClient  < RETURN acceptEulaForPersonId
+com.ibm.whc.sugariq.test.PrimeTests 3 Now I am waiting
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY constructor param: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN constructor
+com.ibm.whc.sugariq.test.PrimeTests 3 Clearing database for person_id 125841898 in after class.
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY deleteUser
+com.ibm.whc.sugariq.test.PrimeTests 3 Cleared 125841898
+NewUserTests: personId: 1757469500
+NewUserTests: Simulator base URL: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+NewUserTests: Creating GuardianSimulatorClient...
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY constructor param: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN constructor
+NewUserTests: Configuring user...
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY configureUser
+NewUserTests: Getting personId from Simulator with token: abcdefgh1234561757469500
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY getPersonIdFromCarelinkSim
+NewUserTests: Deleting user from Simulator with personId: 1757469500
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY deleteUser
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest STARTING TEST FOR data/E10_Glycemic_379_E14_motivational_1_insights.json (glycemic.379)
+5830 - notified based on period within a day (comparative)
+Constructing PropertyLoader: given path to prop file: data/environments.properties
+Constructing PropertyLoader: absolute path to prop file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties
+Constructing PropertyLoader: printing properties: 
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+Constructing PropertyLoader: given path to prop file: data/environments.properties
+Constructing PropertyLoader: absolute path to prop file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties
+Constructing PropertyLoader: printing properties: 
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 129882695 on topic: push_notifications
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (push_notifications)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (push_notifications)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 129882695 on topic: TRIGGER
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (TRIGGER)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (TRIGGER)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 129882695 on topic: MDTPRIME
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (MDTPRIME)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (MDTPRIME)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 129882695 on topic: MDTLIVE
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (MDTLIVE)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (MDTLIVE)
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 129882695 SQL: DELETE FROM MDT.SENSOR_GLUCOSE_DATA WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 129882695 SQL: DELETE FROM MOBILE.AGREEMENTS WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 129882695 SQL: DELETE FROM ANALYTICS.MYDATA_ENTRIES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 129882695 SQL: DELETE FROM MOBILE.USER_STATUSES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+===> com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=129882695 insight=glycemic.379] Sending control pattern to simulator as prime data
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY invokeSimulatorApi
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN invokeSimulatorApi
+com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=129882695 insight=glycemic.379] Accepting EULA for new person id: 129882695 and token: abcdefgh123456129882695
+com.ibm.whc.sugariq.test.clients.MbeClient  > ENTRY acceptEulaForPersonId param: 129882695
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Suspending hypo prediction for personId: 129882695
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey) params: [[J@65383667, 120000, DONOTSCORESUSPEND]
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+sugariq.mobile.backend.framework.KafkaUtil WARNING Requiring Streams - not a local test.  Will suspend Hypo prediction and wait for Ack...
+topic:HYPOSUSPEND partition:0 key:DONOTSCORESUSPEND value:{"id":[129882695]}
+sent
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY ensureHypoAckIsReceived param: [J@65383667
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY checkKafkaTopicMessageExists params: [HYPOACK, [J@65383667]
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: HYPOACK
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+key=CONFIRM message number=0
+Consumed message with conditionString ,key=CONFIRM value=DONOTSCORESUSPEND {"id":[129882695]}
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN checkKafkaTopicMessageExists returns: true
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN ensureHypoAckIsReceived
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey)
+com.ibm.whc.sugariq.test.clients.MbeClient 3 MFP base URL: http://mbe:9080/mfp/api/adapters
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Kafka URL: kafka:9092
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Is Test Running Local (without Streams): false
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Successfully accepted EULA on MBE.
+com.ibm.whc.sugariq.test.clients.MbeClient  < RETURN acceptEulaForPersonId
+===> com.ibm.whc.sugariq.insights.Waiter Waiting for the simulator to finish the PRIME
+com.ibm.whc.sugariq.insights.Waiter The simulator produced 94 messages. The last sg timestamp was 2017-01-10T23:55Z
+===> com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=129882695 insight=glycemic.379] Sending input pattern with start time: 2017-01-11T00:00Z
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY invokeSimulatorApi
+INFO com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=129882695 insight=glycemic.379] 
+--------------Time Table--------------
+Initalize user in database                   0.00
+Prime user                                   7.00
+Generate insights                            unfinished
+Send input data                              unfinished
+Total time                                   14.00
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest FINISHED TEST FOR data/E10_Glycemic_379_E14_motivational_1_insights.json (glycemic.379)
+5830 - notified based on period within a day (comparative)
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest STARTING TEST FOR data/E10_Glycemic_379_E14_motivational_1_insights.json (motivational.1)
+10261 - notified based on positive outcomes in last week
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 97672528 on topic: push_notifications
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (push_notifications)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (push_notifications)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 97672528 on topic: TRIGGER
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (TRIGGER)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (TRIGGER)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 97672528 on topic: MDTPRIME
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (MDTPRIME)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (MDTPRIME)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Starting kafka consumer for person 97672528 on topic: MDTLIVE
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Waiting for the started signal (MDTLIVE)
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer First poll complete
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer Start signal received (MDTLIVE)
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 97672528 SQL: DELETE FROM MDT.SENSOR_GLUCOSE_DATA WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 97672528 SQL: DELETE FROM MOBILE.AGREEMENTS WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 97672528 SQL: DELETE FROM ANALYTICS.MYDATA_ENTRIES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 97672528 SQL: DELETE FROM MOBILE.USER_STATUSES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+===> com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] Sending control pattern to simulator as prime data
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY invokeSimulatorApi
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN invokeSimulatorApi
+com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] Accepting EULA for new person id: 97672528 and token: abcdefgh12345697672528
+com.ibm.whc.sugariq.test.clients.MbeClient  > ENTRY acceptEulaForPersonId param: 97672528
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Suspending hypo prediction for personId: 97672528
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey) params: [[J@436bd4df, 120000, DONOTSCORESUSPEND]
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+sugariq.mobile.backend.framework.KafkaUtil WARNING Requiring Streams - not a local test.  Will suspend Hypo prediction and wait for Ack...
+topic:HYPOSUSPEND partition:0 key:DONOTSCORESUSPEND value:{"id":[97672528]}
+sent
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY ensureHypoAckIsReceived param: [J@436bd4df
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY checkKafkaTopicMessageExists params: [HYPOACK, [J@436bd4df]
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: HYPOACK
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+key=CONFIRM message number=0
+Consumed message with conditionString ,key=CONFIRM value=DONOTSCORESUSPEND {"id":[97672528]}
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN checkKafkaTopicMessageExists returns: true
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN ensureHypoAckIsReceived
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN updateStateOfHyposcoreGenerationForGivenPersonIds(long personId, int timeout, String hyposuspendNotificationKey)
+com.ibm.whc.sugariq.test.clients.MbeClient 3 MFP base URL: http://mbe:9080/mfp/api/adapters
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Kafka URL: kafka:9092
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Is Test Running Local (without Streams): false
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Successfully accepted EULA on MBE.
+com.ibm.whc.sugariq.test.clients.MbeClient  < RETURN acceptEulaForPersonId
+===> com.ibm.whc.sugariq.insights.Waiter Waiting for the simulator to finish the PRIME
+com.ibm.whc.sugariq.insights.Waiter The simulator produced 94 messages. The last sg timestamp was 2017-08-05T23:55Z
+===> com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] Sending input pattern with start time: 2017-08-06T00:00Z
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  > ENTRY invokeSimulatorApi
+com.ibm.whc.sugariq.test.clients.GuardianSimulatorClient  < RETURN invokeSimulatorApi
+com.ibm.whc.sugariq.insights.KafkaTopicConsumer No new messages.
+com.ibm.whc.sugariq.insights.Waiter The simulator produced 2124 messages. The last sg timestamp was 2017-08-13T08:55Z
+===> com.ibm.whc.sugariq.insights.Waiter Waiting for Insight to appear in the insights database table
+com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] Insights generated {}
+com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] Retrieved target insights: 
+[ ]
+INFO com.ibm.whc.sugariq.insights.tests.InsightTestRunner [person=97672528 insight=motivational.1] 
+--------------Time Table--------------
+Initalize user in database                   0.00
+Prime user                                   15.00
+Send input data                              39.00
+Generate insights                            unfinished
+Total time                                   359.00
+INFO com.ibm.whc.sugariq.insights.tests.InsightPushNotificationTest FINISHED TEST FOR data/E10_Glycemic_379_E14_motivational_1_insights.json (motivational.1)
+10261 - notified based on positive outcomes in last week
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 1022544647 SQL: DELETE FROM MDT.SENSOR_GLUCOSE_DATA WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 1022544647 SQL: DELETE FROM MDT.SG_TRENDS WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 1022544647 SQL: DELETE FROM MOBILE.USER_STATUSES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+{"personid":1022544647,    "dataSource": "HYPO_SCORE_DATA",    "dataIntervalInSeconds": "1",    "hypoDataGenConfig":{    							"inputFileId":12345}}
+Request method:	POST
+Request path:	http://device-simulator:8080/diabetes/v2/dss/personal/patient/prime/configuration
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY clearKafkaPipe param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+sugariq.mobile.backend.framework.MBVTBase  < RETURN clearKafkaPipe
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Accept EULA endpoint: http://mbe:9080/mfp/api/adapters
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Accepting EULA for new person id: 1022544647 and token: abcdefgh1234561022544647
+com.ibm.whc.sugariq.test.clients.MbeClient  > ENTRY acceptEulaForPersonId param: 1022544647
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 MFP base URL: http://mbe:9080/mfp/api/adapters
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Kafka URL: kafka:9092
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Is Test Running Local (without Streams): false
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Successfully accepted EULA on MBE.
+com.ibm.whc.sugariq.test.clients.MbeClient  < RETURN acceptEulaForPersonId
+Checking Kafka for END_OF_PRIME  Data
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY consumeKafkaMessagesForGivenCondition params: [MDTPRIME, 1022544647, END_OF_PRIME]
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=0
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=1
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=2
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=3
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=4
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=5
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=6
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=7
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=8
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=9
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=10
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=11
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=12
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=13
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=14
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=15
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=16
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=17
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=18
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=19
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=20
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=21
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=22
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=23
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=24
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=25
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=26
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=27
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=28
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=29
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=30
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=31
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=32
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-23T08:18:00+00:00","timeChange":false,"sg":267,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=33
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-23T19:50:00+00:00","timeChange":false,"sg":288,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=34
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-24T16:20:00+00:00","timeChange":false,"sg":254,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=35
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-25T16:20:00+00:00","timeChange":false,"sg":251,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=36
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-26T16:20:00+00:00","timeChange":false,"sg":309,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=37
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-27T16:20:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=38
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-28T16:20:00+00:00","timeChange":false,"sg":310,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=39
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-29T19:10:00+00:00","timeChange":false,"sg":360,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=40
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-30T16:20:00+00:00","timeChange":false,"sg":350,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=41
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2018-12-31T16:21:00+00:00","timeChange":false,"sg":327,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=42
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-01T16:21:00+00:00","timeChange":false,"sg":208,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=43
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-02T16:21:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=44
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-03T18:57:00+00:00","timeChange":false,"sg":350,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=45
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-04T16:22:00+00:00","timeChange":false,"sg":319,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=46
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=47
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-07T06:28:00+00:00","timeChange":false,"sg":199,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=48
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-07T16:18:00+00:00","timeChange":false,"sg":333,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=49
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-08T16:18:00+00:00","timeChange":false,"sg":226,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=50
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-09T16:18:00+00:00","timeChange":false,"sg":280,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=51
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=52
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-11T20:24:00+00:00","timeChange":false,"sg":286,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=53
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-12T16:19:00+00:00","timeChange":false,"sg":301,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=54
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-13T16:19:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=55
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=56
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=57
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-17T14:23:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=58
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-17T16:18:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=59
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-18T16:19:00+00:00","timeChange":false,"sg":243,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=60
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-19T16:19:00+00:00","timeChange":false,"sg":379,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=61
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-20T16:19:00+00:00","timeChange":false,"sg":375,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=62
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-21T16:19:00+00:00","timeChange":false,"sg":197,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=63
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-22T16:18:00+00:00","timeChange":false,"sg":371,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=64
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-23T18:23:00+00:00","timeChange":false,"sg":333,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=65
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-24T16:20:00+00:00","timeChange":false,"sg":240,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=66
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-01-25T16:20:00+00:00","timeChange":false,"sg":343,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=67
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=68
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=69
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=70
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=71
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=72
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=73
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=74
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-02T17:57:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=75
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-03T16:22:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=76
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-05T08:56:00+00:00","timeChange":false,"sg":400,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=77
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-05T16:21:00+00:00","timeChange":false,"sg":357,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=78
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-06T16:22:00+00:00","timeChange":false,"sg":398,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=79
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-08T09:19:00+00:00","timeChange":false,"sg":180,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=80
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-08T16:19:00+00:00","timeChange":false,"sg":263,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=81
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-09T16:19:00+00:00","timeChange":false,"sg":290,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=82
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-10T16:22:00+00:00","timeChange":false,"sg":171,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=83
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-11T20:35:00+00:00","timeChange":false,"sg":159,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=84
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=85
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=86
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{"sgs":[{"dateTime":"2019-02-15T09:57:00+00:00","timeChange":false,"sg":214,"sensorState":"NORMAL"}],"sgRateOfChange":"UP","limits":[{"highLimit":110,"lowLimit
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=87
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=88
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=89
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=90
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=91
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=92
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 message number=93
+sugariq.mobile.backend.framework.MBVTBase 1 key=1022544647 value=[{ "sensorState":"END_OF_PRIME"}]
+sugariq.mobile.backend.framework.MBVTBase INFO Condition was met - breaking out of Kafka consumer loop
+Adding delay for 30000ms for race condition of live data starting before prime data.
+Request method:	POST
+Request path:	http://device-simulator:8080/diabetes/v2/dss/personal/patient/live/data/kafka
+Checking Kafka for MDTLIVE Data
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getKafkaRecords
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getConsumer
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getConsumer
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":174,"dateTime":"2019-02-15T15:22:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"981793ca-3848-4ef2-9a2b-04d5ad4a9152","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:22:00+00:00"}] offset=8356  timestamp=1550765968291
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":189,"dateTime":"2019-02-15T15:27:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"9d673fc9-38fe-4fc7-bb25-8948e4ed4652","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:27:00+00:00"}] offset=8357  timestamp=1550765968304
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":201,"dateTime":"2019-02-15T15:32:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"91006235-99cd-4e40-9482-0369b3970f4c","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:32:00+00:00"}] offset=8358  timestamp=1550765968322
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":211,"dateTime":"2019-02-15T15:37:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"013fd57c-e890-4201-a1b0-05a4426e89ca","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:37:00+00:00"}] offset=8359  timestamp=1550765968326
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":216,"dateTime":"2019-02-15T15:42:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"027fb40c-d509-4d42-a61d-1857b2883dd9","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:42:00+00:00"}] offset=8360  timestamp=1550765968347
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":219,"dateTime":"2019-02-15T15:47:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"6c2eebd5-1ccb-4b4a-b708-357a36059124","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:47:00+00:00"}] offset=8361  timestamp=1550765968353
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":218,"dateTime":"2019-02-15T15:52:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"ac7913e1-771c-4cae-b979-293bd9b1d36f","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:52:00+00:00"}] offset=8362  timestamp=1550765968356
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":216,"dateTime":"2019-02-15T15:57:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"a7a16ddb-4cad-4eff-b7c3-6b71644c5577","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T15:57:00+00:00"}] offset=8363  timestamp=1550765968363
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":214,"dateTime":"2019-02-15T16:02:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"d8295be9-13ba-4c8e-b352-2a63266382d8","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:02:00+00:00"}] offset=8364  timestamp=1550765968373
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":212,"dateTime":"2019-02-15T16:07:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"8aa027bb-d742-42b3-9b47-c1dd7fb3bee8","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:07:00+00:00"}] offset=8365  timestamp=1550765968379
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":214,"dateTime":"2019-02-15T16:12:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"8dd650c4-5d2c-4ff1-ac30-4ce630295c33","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:12:00+00:00"}] offset=8366  timestamp=1550765968381
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":217,"dateTime":"2019-02-15T16:17:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"992ccbb8-da9d-4ae7-ba01-2b63328d8185","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:17:00+00:00"}] offset=8367  timestamp=1550765968392
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":215,"dateTime":"2019-02-15T16:22:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"ff983242-cab9-4371-b494-be8e78a4ac63","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:22:00+00:00"}] offset=8368  timestamp=1550765968398
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":201,"dateTime":"2019-02-15T16:27:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"9bd45620-2bd0-4ced-b86b-9575adf8d403","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:27:00+00:00"}] offset=8369  timestamp=1550765968401
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":187,"dateTime":"2019-02-15T16:32:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"c35d0fcb-2c63-493a-ac0e-f037a2522d05","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:32:00+00:00"}] offset=8370  timestamp=1550765968413
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":181,"dateTime":"2019-02-15T16:37:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"1f508f11-b966-44de-a6a5-407ed5a8d11a","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:37:00+00:00"}] offset=8371  timestamp=1550765968420
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":179,"dateTime":"2019-02-15T16:42:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"e1bdd69b-2c76-4cda-a94a-e9e211bc8f8a","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:42:00+00:00"}] offset=8372  timestamp=1550765968423
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":177,"dateTime":"2019-02-15T16:47:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"c47b955a-db41-413d-a4b8-0aecf179a28c","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:47:00+00:00"}] offset=8373  timestamp=1550765968429
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"UP","sgs":[{"timeChange":false,"sg":184,"dateTime":"2019-02-15T16:52:00+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":110}],"activeAlert":[{"kind":"testKind","time":"2019-02-21T16:24:28+00:00","version":null,"uuid":null}],"markers":[{"index":1,"event":{"deleted":true,"calibration":true,"version":0,"duration":2,"carbs":1,"value":99.08801,"insulinUnits":null,"kind":"events_b","time":null,"uuid":"2953f430-a6d2-4b73-b21f-650f55fe4842","description":null,"source":"user","intensity":null,"units":null,"enteredAsUnits":"mmol/L","insulinType":null,"parentUUID":null,"notes":null}}],"activeInsulin":{"insulinUnits":150,"dateTime":"2019-02-21T16:24:28+00:00"},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":false,"sourceTime":"2019-02-15T16:52:00+00:00"}] offset=8374  timestamp=1550765968433
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getKafkaRecords
+Checking Kafka for HYPOSCORE Data
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Hyposcore consumer startTime in millis = 1550765920149
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Adding 120 sec timeout
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Hyposcore consumer endTime in millis = 1550766040149
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getKafkaRecords
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getConsumer
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getConsumer
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=HYPOSCORE value={"personId":1022544647,"sgTimestamp":"2019-02-15T15:12:00+00:00","modelId":"base","version":2.0,"rawHypoScore":0.043,"smoothedHypoScore":0.043,"hypQuant":0} offset=1  timestamp=1550765969282
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getKafkaRecords
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Current Timestamp after getKafkaRecords for HYPOSCORE consumer = 1550765969433
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Number of Hyposcore messages read from kafkautil: 1
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MDT.SENSOR_GLUCOSE_DATA WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MDT.SG_TRENDS WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MOBILE.USER_STATUSES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+sugariq.mobile.backend.framework.UserConfigurationBase 3 startTime : 2019-02-21T10:19:29+00:00
+Request method:	POST
+Request path:	http://device-simulator:8080/diabetes/v2/dss/personal/patient/prime/configuration
+sugariq.mobile.backend.framework.UserConfigurationBase 3 User configured on Data Generator. Person Id : 673653120 using SG pattern: inputPattern_control_in_range_80_170_6hours.txt with start time: 2019-02-21T10:19:29+00:00
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY clearKafkaPipe param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+sugariq.mobile.backend.framework.MBVTBase  < RETURN clearKafkaPipe
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Accept EULA endpoint: http://mbe:9080/mfp/api/adapters
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Accepting EULA for new person id: 673653120 and token: abcdefgh123456673653120
+com.ibm.whc.sugariq.test.clients.MbeClient  > ENTRY acceptEulaForPersonId param: 673653120
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 MFP base URL: http://mbe:9080/mfp/api/adapters
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Kafka URL: kafka:9092
+com.ibm.whc.sugariq.test.config.Environment  > ENTRY isTestRunningWithoutStreams
+com.ibm.whc.sugariq.test.config.Environment 1 All properties:
+-- listing properties --
+MDT.OAUTH.SIMULATOR.RELATIVE.URL=/mdtv3/auth/oauth/v2
+MBE.PORT=9080
+MDT.OAUTH.SIMULATOR.BASE.URL=http://device-simulator:8080
+IS_TEST_RUNNING_ON_LOCAL_MACHINE=false
+MDT.USERINFO.SIMULATOR.RELATIVE.URL=/mdtv3/openid/connect/v1
+MDT.SIMULATOR.BASE.URL=http://device-simulator:8080/diabetes...
+DB.PORT=50000
+DB.PASSWORD=safe4whc
+DB=data-mgt
+DB.USER=db2dat01
+MBE.BASE.URL=http://mbe:9080/mfp
+ZOOKEEPER=
+INSIGHT.TEST.CONFIG.FILE=data/insightTests.properties
+KAFKA.URL=kafka:9092
+DB.SSL=False
+ANALYTICS_JEE_BASE_URL=http://mbe:8080/analyticsjee
+MBE.HOST=mbe
+com.ibm.whc.sugariq.test.config.Environment 3 Property IS_TEST_RUNNING_ON_LOCAL_MACHINE in file: /tmp/vv-test/health-diagnostic-test/scripts/data/environments.properties has value: false
+com.ibm.whc.sugariq.test.config.Environment 1 DEBUG: value of property MDT.SIMULATOR.BASE.URL is: http://device-simulator:8080/diabetes/v2/dss/personal/patient
+com.ibm.whc.sugariq.test.config.Environment  < RETURN isTestRunningWithoutStreams returns: false
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Is Test Running Local (without Streams): false
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+Request method:	POST
+Request path:	http://mbe:9080/mfp/api/adapters/UserServices/updateLicenseAgreement
+
+com.ibm.whc.sugariq.test.clients.MbeClient 3 Successfully accepted EULA on MBE.
+com.ibm.whc.sugariq.test.clients.MbeClient  < RETURN acceptEulaForPersonId
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Checking Kafka for END_OF_PRIME Data
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY consumeKafkaMessagesForGivenCondition params: [MDTPRIME, 673653120, END_OF_PRIME]
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: MDTPRIME
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=0
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=1
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=2
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=3
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=4
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=5
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=6
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=7
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=8
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=9
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=10
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=11
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=12
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=13
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=14
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=15
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=16
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=17
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=18
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=19
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=20
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=21
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=22
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=23
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=24
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=25
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=26
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=27
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=28
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=29
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=30
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=31
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=32
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=33
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=34
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=35
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=36
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=37
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=38
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=39
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=40
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=41
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=42
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=43
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=44
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=45
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=46
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=47
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=48
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=49
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=50
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=51
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=52
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=53
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=54
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=55
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=56
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=57
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=58
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=59
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=60
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=61
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=62
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=63
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=64
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=65
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=66
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=67
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=68
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=69
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=70
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=71
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=72
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=73
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=74
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=75
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=76
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=77
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=78
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=79
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=80
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=81
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=82
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=83
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=84
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=85
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=86
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=87
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=88
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=89
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=90
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=91
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[]
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=92
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[{"sgs":[{"dateTime":"2019-02-21T10:19:29+00:00","timeChange":false,"sg":125,"sensorState":"NORMAL"}],"sgRateOfChange":"NONE","limits":[{"highLimit":350,"lowLim
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 message number=93
+sugariq.mobile.backend.framework.MBVTBase 1 key=673653120 value=[{ "sensorState":"END_OF_PRIME"}]
+sugariq.mobile.backend.framework.MBVTBase INFO Condition was met - breaking out of Kafka consumer loop
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY clearKafkaPipe param: HYPOALERT
+sugariq.mobile.backend.framework.MBVTBase  > ENTRY getConsumer param: HYPOALERT
+sugariq.mobile.backend.framework.MBVTBase  < RETURN getConsumer
+sugariq.mobile.backend.framework.MBVTBase  < RETURN clearKafkaPipe
+Sending sg data 50 through simulator live api for person_id=673653120
+sugariq.mobile.backend.framework.UserConfigurationBase 3 configJson={"personid": 673653120,"dataIntervalInSeconds": 10,"dataSource": "DATA_GENERATOR","dataGenConfig": {"config": {"person_id": "673653120","start_time": "2019-02-21T16:19:36+00:00"},"sequence": [{"generator": "static_sg",  "pattern": "control","sequence": "50"  }]}}
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Sending live data for person_id=673653120
+Request method:	POST
+Request path:	http://device-simulator:8080/diabetes/v2/dss/personal/patient/live/data/kafka
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getKafkaRecords
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getConsumer
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getConsumer
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=MDTLIVE value=[{"sensorState":"NORMAL","bgUnits":"MGDL","timeFormat":"HR_24","timeToNextCalibrationHours":null,"sgRateOfChange":"NONE","sgs":[{"timeChange":false,"sg":50,"dateTime":"2019-02-21T16:19:36+00:00","sensorState":"NORMAL"}],"limits":[{"index":1,"lowLimit":20,"highLimit":350}],"activeAlert":[],"markers":[],"activeInsulin":{"insulinUnits":0,"dateTime":null},"source":{"deviceType":"GC","kind":"PERIODIC_GUARDIAN"},"sourceBatteryLevelPercent":0,"sourceSensorInRange":true,"sourceTime":"2019-02-21T16:19:36+00:00"}] offset=8427  timestamp=1550765977688
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getKafkaRecords
+sugariq.mobile.backend.framework.UserConfigurationBase 3 sendLiveDataOnSimulator: Size of MDTLIVE topic with person_id=673653120 is size=1
+sugariq.mobile.backend.framework.UserConfigurationBase 3 Live Data sent for user=673653120
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getKafkaRecords
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getConsumer
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getConsumer
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=HYPOALERT value={"data":{"AlertStart":"2019-02-21T16:19:36Z","AlertEnd":"2019-02-21T20:19:36Z"}, "type":"hypo.1"} offset=2  timestamp=1550765983255
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getKafkaRecords
+sugariq.mobile.backend.framework.UserConfigurationBase 3 conditionString = I noticed that you're expected to go below 70mg/dl within the next 4 hours. Check your IQcast status in the app for details.
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getKafkaRecords
+sugariq.mobile.backend.framework.KafkaUtil  > ENTRY getConsumer
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getConsumer
+sugariq.mobile.backend.framework.KafkaUtil 1 Consumed topic=push_notifications value={"deviceExists":false,"notificationText":"I noticed that you're expected to go below 70mg/dl within the next 4 hours. Check your IQcast status in the app for details.","payload":{"Insights":3}} offset=207  timestamp=1550765983461
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 170 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 171 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 172 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 173 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 174 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 175 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 176 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 177 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 178 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 179 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 180 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 181 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 182 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 183 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 184 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 185 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 186 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 187 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 188 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 189 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 190 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 191 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 192 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 193 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 194 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 195 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 196 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 197 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 198 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 199 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 200 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 201 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 202 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 203 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 204 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 205 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 206 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil WARNING Somehow this offset: 207 was read again from Kafka.  I don't know why :-( Skipping it for now.
+sugariq.mobile.backend.framework.KafkaUtil  < RETURN getKafkaRecords
+com.ibm.whc.sugariq.utils.DbClient 1 insights were deleted from analytics.streams for person 673653120
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MDT.SENSOR_GLUCOSE_DATA WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MDT.SG_TRENDS WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+com.ibm.whc.sugariq.utils.DbClient Clearing database for person 673653120 SQL: DELETE FROM MOBILE.USER_STATUSES WHERE PERSON_ID=?
+com.ibm.whc.sugariq.utils.DbClient Finished clearing database
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/tmp/vv-test/health-diagnostic-test/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/tmp/vv-test/health-diagnostic-test/lib/slf4j-simple-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Feb 21, 2019 4:08:21 PM sugariq.mobile.backend.framework.mfp.managment.client.MfpClient preauthorize
+INFO: {ConnectPlusAuth={personId=125841898, oauthToken=abcdefgh123456125841898}}
+Feb 21, 2019 4:08:21 PM sugariq.mobile.backend.framework.mfp.managment.client.ConnectPlusAuthChallengeHandler handleSuccess
+INFO: handled ConnectPlusAuth security check successfully
+Feb 21, 2019 4:12:18 PM sugariq.mobile.backend.framework.mfp.managment.client.MfpClient preauthorize
+INFO: {ConnectPlusAuth={personId=129882695, oauthToken=abcdefgh123456129882695}}
+Feb 21, 2019 4:12:18 PM sugariq.mobile.backend.framework.mfp.managment.client.ConnectPlusAuthChallengeHandler handleSuccess
+INFO: handled ConnectPlusAuth security check successfully
+Feb 21, 2019 4:12:43 PM sugariq.mobile.backend.framework.mfp.managment.client.MfpClient preauthorize
+INFO: {ConnectPlusAuth={personId=97672528, oauthToken=abcdefgh12345697672528}}
+Feb 21, 2019 4:12:44 PM sugariq.mobile.backend.framework.mfp.managment.client.ConnectPlusAuthChallengeHandler handleSuccess
+INFO: handled ConnectPlusAuth security check successfully
+Feb 21, 2019 4:18:41 PM sugariq.mobile.backend.framework.mfp.managment.client.MfpClient preauthorize
+INFO: {ConnectPlusAuth={personId=1022544647, oauthToken=abcdefgh1234561022544647}}
+Feb 21, 2019 4:18:42 PM sugariq.mobile.backend.framework.mfp.managment.client.ConnectPlusAuthChallengeHandler handleSuccess
+INFO: handled ConnectPlusAuth security check successfully
+Feb 21, 2019 4:19:31 PM sugariq.mobile.backend.framework.mfp.managment.client.MfpClient preauthorize
+INFO: {ConnectPlusAuth={personId=673653120, oauthToken=abcdefgh123456673653120}}
+Feb 21, 2019 4:19:31 PM sugariq.mobile.backend.framework.mfp.managment.client.ConnectPlusAuthChallengeHandler handleSuccess
+INFO: handled ConnectPlusAuth security check successfully
+]]></system-err>
+</testsuite>

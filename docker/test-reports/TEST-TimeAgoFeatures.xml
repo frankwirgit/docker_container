@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="TimeAgoFeatures" skipped="0" tests="15" time="167.902" timestamp="2019-01-31T02:03:08">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg2hrago-9-should_not_generate_feature" time="163.425" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg2hrago-9-should_generate_feature_with_sg_125_min_before" time="163.428" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg2hrago-9-should_generate_feature_with_sg_exactly_2_hr_before" time="163.429" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg2hrago-9-should_generate_feature_with_sg_140_min_before" time="163.43" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg30minago-8-should_not_generate_feature" time="157.946" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg30minago-8-should_generate_feature_with_sg_15_min_before" time="157.947" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg30minago-8-should_generate_feature_with_sg_45_min_before" time="157.947" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg30minago-8-should_generate_feature_with_sg_25_min_before" time="157.948" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg30minago-8-should_generate_feature_with_sg_exactly_30_min_before" time="157.948" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg4hrago-10-should_generate_feature_with_sg_210_min_before" time="152.494" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg4hrago-10-should_not_generate_feature" time="152.495" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg4hrago-10-should_generate_feature_with_sg_260_min_before" time="152.495" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg4hrago-10-should_generate_feature_with_sg_270_min_before" time="152.496" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sg4hrago-10-should_generate_feature_with_sg_exactly_4_hr_before" time="152.496" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="sglatest-1-should_generate_sglatest_exactly_as_input_sg" time="151.201" />
+</testsuite>

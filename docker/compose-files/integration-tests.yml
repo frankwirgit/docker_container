@@ -1,0 +1,33 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  health-diagnostic-tests:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/health-diagnostic-tests:latest"
+    container_name: "health-diagnostic-tests"
+    networks:
+          - "sugar-iq"
+    environment:
+      - "DB2_DATABASE=MDTDB"
+      - "DB2_HOSTNAME=data-mgt"
+      - "DB2_PORT=50000"
+      - "DB2_USERNAME=db2dat01"
+      - "DB2_PASSWORD=safe4whc"
+      - "DB2_SSL=False"
+      - "MBE_HOSTNAME=mbe"
+      - "GUARDIAN_SIM_HOSTNAME=device-simulator"
+      - "ANA_JEE_HOSTNAME=mbe"
+      - "SIMULATOR_HOSTNAME=device-simulator"
+      - "SIMULATOR_PORT=8080"
+      - "KAFKA_NODES=1"
+      - "KAFKA_HOST_1=kafka"
+      - "KAFKA_PORT_1=9092"
+      - "ZOOKEEPER_SERVERS="
+      - "KEEP_ALIVE=true"
+    volumes:
+      - type: "bind"
+        source: "/Users/lcao@us.ibm.com/docker_scripts/ci/docker/test-reports"
+        target: "/root/dist"

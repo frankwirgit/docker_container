@@ -1,0 +1,32 @@
+version: "3.2"
+networks:
+  sugar-iq:
+    external:
+      name: "sugar-iq"
+
+services:
+  device-simulator:
+    image: "med-p3-dev-cwb.softlayer.com:5000/develop/device-simulator:latest"
+    container_name: "device-simulator"
+    networks:
+      - "sugar-iq"
+    ports:
+          - "8080:8080"
+    volumes:
+      - type: "bind"
+        source: "${HOME}/sugariq-truststore.jks"
+        target: "/etc/ssl/sugariq-truststore.jks"
+    environment:
+      - "MDT_DB_HOSTNAME=data-mgt"
+      - "MDT_DB_PORT=50000"
+      - "MDT_STREAMS_DB_USERNAME=db2dat01"
+      - "MDT_STREAMS_DB_PASSWORD=safe4whc"
+      - "MDT_MBE_DB_USERNAME=db2dat01"
+      - "MDT_MBE_DB_PASSWORD=safe4whc"
+      - "SIMULATOR_HOSTNAME=localhost"
+      - "SIMULATOR_PORT=8080"
+
+      - "KAFKA_BROKERS=kafka:9093"
+
+      - "TRUSTSTORE_PATH=/etc/ssl/sugariq-truststore.jks"
+      - "TRUSTSTORE_PASSWORD=safe4whc"

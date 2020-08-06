@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="SlopeFeatures" skipped="0" tests="15" time="34.243" timestamp="2019-01-31T02:08:43">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope2hr-18-should_generate_feature_with_incomplete_2_hr_window" time="29.925" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope2hr-18-should_generate_feature_with_150_min_expanded_window" time="29.925" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope2hr-18-should_generate_feature_with_incomplete_150_min_expanded_window" time="29.926" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope2hr-18-should_not_generate_feature_with_150_min_gap" time="29.926" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope2hr-18-should_generate_feature_with_2_hr_window" time="29.926" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope30min-17-should_generate_feature_with_30_min_window" time="25.525" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope30min-17-should_not_generate_feature_with_45_min_gap" time="25.525" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope30min-17-should_generate_feature_with_45_min_expanded_window" time="25.525" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope30min-17-should_generate_feature_with_incomplete_30_min_window" time="25.526" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope30min-17-should_generate_feature_with_incomplete_45_min_expanded_window" time="25.527" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope4hr-19-should_generate_feature_with_4_hr_window" time="21.306" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope4hr-19-should_generate_feature_with_incomplete_270_min_expanded_window" time="21.306" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope4hr-19-should_not_generate_feature_with_270_min_gap" time="21.306" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope4hr-19-should_generate_feature_with_incomplete_4_hr_window" time="21.307" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="slope4hr-19-should_generate_feature_with_270_min_expanded_window" time="21.307" />
+</testsuite>

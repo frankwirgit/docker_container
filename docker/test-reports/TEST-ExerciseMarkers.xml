@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="75f3c0819f44" name="ExerciseMarkers" skipped="0" tests="6" time="40.643" timestamp="2019-01-31T02:02:15">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_hk_parsed_released_24hrs-5-positive1" time="37.297" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_hk_parsed_released_with_gap-6-positive1" time="35.645" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_parsed_released_24hrs-03-positive1" time="31.641" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_parsed_released_24hrs-1-positive1" time="27.449" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_parsed_released_with_gap-04-positive1" time="25.642" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="should_ExerciseMarker_parsed_released_with_gap-2-positive1" time="23.345" />
+</testsuite>

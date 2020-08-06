@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="1aa3e5ab3c53" name="MI-smoke-test" skipped="0" tests="4" time="294.434" timestamp="2019-03-08T19:22:04">
+  <properties />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_improvement_from_last_month" time="266.299" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-MDT_input_should_generate_insights_as_expected" time="266.3" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_less_than_25_pct_hypos" time="266.3" />
+  <testcase classname="com.ibm.mdt.unittest.dynamic.DynamicTestCase" name="MI-68-should_generate_insight_only_if_number_of_packages_more_than_480" time="266.301" />
+</testsuite>
